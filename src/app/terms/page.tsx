@@ -37,7 +37,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">3. Account Responsibilities</h2>
             <p className="text-gray-600 leading-relaxed">
               You are responsible for maintaining the confidentiality of your account credentials. You are responsible for all activity that occurs under your account. You must notify us immediately at{' '}
-              <a href="mailto:hello@teveles.com" className="text-blue-600 hover:underline">hello@teveles.com</a>{' '}
+              <a href="mailto:info@teveles.app" className="text-blue-600 hover:underline">info@teveles.app</a>{' '}
               if you suspect unauthorized access to your account. Teveles reserves the right to suspend or terminate accounts that violate these Terms.
             </p>
           </section>
@@ -81,7 +81,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">9. Contact</h2>
             <p className="text-gray-600 leading-relaxed">
               For questions about these Terms, please contact us at:{' '}
-              <a href="mailto:hello@teveles.com" className="text-blue-600 hover:underline">hello@teveles.com</a>
+              <a href="mailto:info@teveles.app" className="text-blue-600 hover:underline">info@teveles.app</a>
             </p>
           </section>
 

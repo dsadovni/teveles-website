@@ -58,8 +58,8 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-3 mb-4">
               <Mail className="h-5 w-5 text-blue-600" />
-              <a href="mailto:hello@teveles.com" className="text-blue-600 hover:underline text-sm">
-                hello@teveles.com
+              <a href="mailto:info@teveles.app" className="text-blue-600 hover:underline text-sm">
+                info@teveles.app
               </a>
             </div>
 

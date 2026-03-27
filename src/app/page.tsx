@@ -304,7 +304,7 @@ export default function HomePage() {
           </Link>
           <p className="mt-4 text-blue-300 text-sm">
             Questions? Reach us at{' '}
-            <a href="mailto:hello@teveles.com" className="underline hover:text-white">hello@teveles.com</a>
+            <a href="mailto:info@teveles.app" className="underline hover:text-white">info@teveles.app</a>
           </p>
         </div>
       </section>

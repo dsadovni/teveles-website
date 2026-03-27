@@ -120,7 +120,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Where we are today</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Teveles is currently in private beta. We&apos;re working closely with a small group of early athletes to refine the platform before a broader launch. If you&apos;re interested in joining, reach out at{' '}
-            <a href="mailto:hello@teveles.com" className="text-blue-600 hover:underline">hello@teveles.com</a>.
+            <a href="mailto:info@teveles.app" className="text-blue-600 hover:underline">info@teveles.app</a>.
           </p>
         </div>
       </section>
