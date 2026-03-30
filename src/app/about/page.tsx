@@ -8,6 +8,9 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-base font-medium text-blue-600 mb-4">
+            Teveles is a fitness and performance analytics platform built by amateur athletes who love data.
+          </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Building the analytics layer<br className="hidden sm:block" /> for serious athletes
           </h1>
@@ -43,7 +46,7 @@ export default function AboutPage() {
                   <h2 className="text-xl font-bold text-gray-900">Our Vision</h2>
                 </div>
                 <p className="text-gray-500 leading-relaxed">
-                  We&apos;re building the analytics and AI layer that turns raw activity data into genuine performance insights. We envision a world where every serious athlete has access to the kind of coaching and analysis previously reserved for elite professionals.
+                  We&apos;re building the analytics and AI layer that turns raw activity data into genuine performance insights. We envision a world where every serious athlete — and every coach — has access to the kind of analysis previously reserved for elite programs.
                 </p>
               </CardContent>
             </Card>
@@ -51,20 +54,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founder */}
+      {/* Origin story */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Built by athletes, for athletes</h2>
-            <div className="w-20 h-20 rounded-full bg-blue-100 border-2 border-blue-200 mx-auto mb-6 flex items-center justify-center">
-              <span className="text-2xl font-bold text-blue-600">T</span>
+            <div className="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                Teveles was created by a group of amateur endurance athletes who care deeply about training, recovery, and the stories hidden inside performance data. Like many athletes, we found that raw metrics alone rarely answer the questions that matter most: Why did this workout feel different? How is sleep affecting recovery? What patterns are shaping progress over time?
+              </p>
+              <p>
+                We built Teveles to bring a more thoughtful, analytical approach to training data — combining structured metrics, trend analysis, and modern AI tools to turn complex performance signals into practical insight. Our goal is to make that approach available not only to data-driven athletes like us, but also to coaches and training communities who want a clearer, more actionable view of performance.
+              </p>
+              <p>
+                Teveles is designed to help athletes and coaches move beyond isolated numbers and toward a deeper understanding of training load, recovery, consistency, and long-term progress.
+              </p>
             </div>
-            <blockquote className="text-gray-600 text-lg leading-relaxed italic mb-6">
-              &ldquo;I was frustrated. I had years of Garmin data sitting in an app that showed me step counts and sleep scores but couldn&apos;t tell me why I was fatigued, whether my training was working, or how to improve. I built Teveles to answer those questions.&rdquo;
-            </blockquote>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              Teveles was founded by a developer and endurance athlete frustrated with shallow fitness analytics. We&apos;re starting with a small community of beta users and growing carefully — prioritizing depth, accuracy, and user trust over scale.
-            </p>
           </div>
         </div>
       </section>

@@ -13,8 +13,11 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-gray-900 mb-3">Introduction</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-3">
               Teveles (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal and health data when you use the Teveles platform (&quot;the Service&quot;). By using Teveles, you agree to the practices described in this policy.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Teveles is intended for fitness, training, and wellness insights only. It is not a medical device and does not provide medical diagnosis, treatment, or emergency monitoring.
             </p>
           </section>
 
@@ -23,7 +26,7 @@ export default function PrivacyPage() {
             <p className="text-gray-600 leading-relaxed mb-3">We collect the following types of data:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
               <li>
-                <strong>Garmin Activity and Health Data:</strong> When you connect your Garmin account, we access data via the official Garmin Health API. This includes activity data (runs, rides, swims, steps), sleep metrics, heart rate and HRV data, body battery, stress scores, and other health metrics available through the API.
+                <strong>Garmin Activity and Health Data:</strong> If you choose to connect Garmin, Teveles may access authorized categories of activity, wellness, and related fitness data made available through Garmin&apos;s official developer program, subject to Garmin approval and your authorization. This may include activity data (runs, rides, swims, steps), sleep metrics, heart rate and HRV data, body battery, stress scores, and other health metrics.
               </li>
               <li>
                 <strong>Account Information:</strong> Your name, email address, and account preferences you provide during registration.
@@ -53,6 +56,9 @@ export default function PrivacyPage() {
             <p className="text-gray-600 leading-relaxed mt-3">
               We do not use your health data for advertising, profiling for third parties, insurance purposes, or any purpose beyond providing the Service to you.
             </p>
+            <p className="text-gray-600 leading-relaxed mt-3">
+              We process your data only as necessary to provide the Service you request, support authorized integrations, maintain platform security, communicate important service information, and improve the product using aggregated or de-identified information where possible.
+            </p>
           </section>
 
           <section>
@@ -63,15 +69,32 @@ export default function PrivacyPage() {
           </section>
 
           <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">Garmin Consent and Disconnect</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Before connecting Garmin, Teveles presents information about the data categories requested and the purposes for which they are used. We only access Garmin-related data after you authorize that connection. You may withdraw consent and disconnect Garmin at any time through your account settings or by contacting us. Disconnecting Garmin stops future synchronization. Previously stored data will be handled in accordance with this Privacy Policy and applicable law.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-bold text-gray-900 mb-3">Third-Party Services</h2>
             <p className="text-gray-600 leading-relaxed mb-3">We use the following third-party services to operate Teveles:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-600">
-              <li><strong>Garmin Health API:</strong> To sync your activity and health data. Subject to Garmin&apos;s own Privacy Policy.</li>
+              <li>
+                <strong>Garmin Health API:</strong> To sync your activity and health data, subject to your authorization. Garmin&apos;s data practices are governed by their own privacy policy. For more information, see{' '}
+                <a href="https://www.garmin.com/en-US/privacy/app-privacy/policy/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Garmin&apos;s Privacy Policy</a>.
+              </li>
               <li><strong>Cloud Infrastructure Providers:</strong> For hosting and data storage. These providers process data only on our behalf and are contractually bound to protect it.</li>
               <li><strong>Analytics Tools:</strong> We may use privacy-respecting analytics tools to understand platform usage. No personally identifiable health data is shared with these services.</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
               We do not sell, rent, or share your personal health data with any third party for their own purposes.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">International Data Transfers</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Your data may be processed in countries other than your country of residence. Where required by law, we implement appropriate safeguards for such transfers.
             </p>
           </section>
 
@@ -94,7 +117,7 @@ export default function PrivacyPage() {
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
               To exercise any of these rights, contact us at{' '}
-              <a href="mailto:privacy@teveles.com" className="text-blue-600 hover:underline">privacy@teveles.com</a>.
+              <a href="mailto:privacy@teveles.app" className="text-blue-600 hover:underline">privacy@teveles.app</a>.
             </p>
           </section>
 
@@ -102,7 +125,7 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">Contact for Privacy Requests</h2>
             <p className="text-gray-600 leading-relaxed">
               For any privacy-related questions, concerns, or data requests, please contact us at:{' '}
-              <a href="mailto:privacy@teveles.com" className="text-blue-600 hover:underline">privacy@teveles.com</a>
+              <a href="mailto:privacy@teveles.app" className="text-blue-600 hover:underline">privacy@teveles.app</a>
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
               We will respond to all privacy requests within 30 days.

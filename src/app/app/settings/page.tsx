@@ -8,7 +8,7 @@ import { User, Ruler, Utensils, Globe, ShieldAlert } from 'lucide-react'
 
 export default function SettingsPage() {
   const [units, setUnits] = useState<'metric' | 'imperial'>('metric')
-  const [profile, setProfile] = useState({ name: 'Dima', email: 'dima@teveles.com' })
+  const [profile, setProfile] = useState({ name: 'Dima', email: 'dima@teveles.app' })
   const [body, setBody] = useState({ height: '178', weight: '72' })
   const [nutrition, setNutrition] = useState({ calories: '2400', protein: '160', carbs: '240', fat: '80' })
   const [locale, setLocale] = useState({ timezone: 'America/New_York', language: 'English' })

@@ -175,7 +175,7 @@ export default function HomePage() {
               <div className="w-3 h-3 rounded-full bg-red-400" />
               <div className="w-3 h-3 rounded-full bg-yellow-400" />
               <div className="w-3 h-3 rounded-full bg-green-400" />
-              <div className="ml-4 flex-1 bg-white rounded-md px-3 py-1 text-xs text-gray-400">app.teveles.com/dashboard</div>
+              <div className="ml-4 flex-1 bg-white rounded-md px-3 py-1 text-xs text-gray-400">app.teveles.app/dashboard</div>
             </div>
             <div className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4">
               {[

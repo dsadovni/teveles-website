@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/lib/button-variants'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowRight, BarChart2, BrainCircuit, TrendingUp, Settings2 } from 'lucide-react'
+import { ArrowRight, BarChart2, BrainCircuit, TrendingUp, Settings2, ShieldCheck, Lock } from 'lucide-react'
 import WeeklyMileageChart from '@/components/charts/WeeklyMileageChart'
 import PaceTrendChart from '@/components/charts/PaceTrendChart'
 
@@ -49,6 +49,68 @@ export default function ProductPage() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Integrations */}
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Integrations</h2>
+            <p className="text-gray-500 mb-8 leading-relaxed">
+              Today, Teveles is focused on Garmin integration to support activity and wellness-based insights for athletes and coaches. We plan to expand support to additional platforms, including COROS and Polar, as the product evolves.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { label: 'Garmin', status: 'Current', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+                { label: 'COROS', status: 'Planned', color: 'bg-gray-100 text-gray-500 border-gray-200' },
+                { label: 'Polar', status: 'Planned', color: 'bg-gray-100 text-gray-500 border-gray-200' },
+              ].map(({ label, status, color }) => (
+                <div key={label} className={`px-5 py-2.5 rounded-full border text-sm font-medium flex items-center gap-2 ${color}`}>
+                  {label}
+                  <span className="text-xs opacity-70">({status})</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Security / Data Flow */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
+                <ShieldCheck className="h-5 w-5 text-emerald-600" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900">How data flows through Teveles</h2>
+            </div>
+            {/* Banner */}
+            <div className="rounded-xl bg-emerald-50 border border-emerald-200 px-6 py-4 mb-8 flex items-start gap-3">
+              <Lock className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+              <p className="text-emerald-800 text-sm leading-relaxed font-medium">
+                Secure by design: authorized data is securely ingested, processed, and transformed into athlete-facing insights.
+              </p>
+            </div>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Teveles securely ingests authorized user data, processes it in protected cloud infrastructure, and uses it to generate dashboards, analytics, and personalized insights.
+            </p>
+            <p className="text-sm font-semibold text-gray-700 mb-3">We are committed to handling data responsibly:</p>
+            <ul className="space-y-3">
+              {[
+                'Data is transmitted over encrypted connections and stored using secure cloud infrastructure.',
+                'We do not store your Garmin login credentials.',
+                'Where supported, user connections are authorized through a consent-based integration flow rather than direct credential handling.',
+                'Access to user data is restricted to systems and personnel who need it to operate, support, and secure the Service.',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-600">
+                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
